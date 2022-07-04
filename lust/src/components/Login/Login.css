@@ -1,0 +1,197 @@
+.content {
+    background-image: linear-gradient(0deg, #d6dcff, #c88dff, #c98fff, #9180ff); 
+    width: 100%;
+    height: 100vh;
+    /* DARK MODE 
+    background-image: linear-gradient(0deg,#111928,#333333,#333333,#111928);
+    */
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+}
+
+.darkMode {
+    display: flex;
+    justify-content: end;
+}
+.darkMode svg{
+    font-size: 42px;
+    /* DARK MODE
+    color: #ffd9b8;
+    */
+}
+.luas{
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
+
+.form {
+    width: 25%;
+    height: 60%;
+    backdrop-filter: blur(5px) saturate(95%);
+    -webkit-backdrop-filter: blur(5px) saturate(95%);
+    background-color: rgba(17, 25, 40, 0.2);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inside-form{
+    width: 90%;
+    height: 90%;
+}
+.login{
+    color: #000000;
+    /* DARK MODE
+    color: #ffd9b8;
+    */
+}
+.hr-login{
+    margin: 5px 0px;
+    width: 15%;
+    border-color: #000000;
+    /* DARK MODE
+    border-color: #ffd9b8;
+    */
+    
+
+}
+.email{
+    margin: 3em 0px 3em 0em;
+    /* DARK MODE 
+    color:#ffd9b8;
+
+    */
+}
+.hr-email{
+    width: 95%;
+
+    border-color: rgb(0, 0, 0);
+    /* DARK MODE
+    border-color: #ffd9b8;
+    */
+    
+}
+.input-email{
+    width: 95%;
+    height: 30px;
+    background-color: transparent;
+    border: transparent;
+    padding: 5px;
+    font-size: 16px;
+}
+.senha{
+    margin: 3em 0px 3em 0em;
+    /* DARK MODE 
+    color:#ffd9b8;
+    */
+}
+.input-senha{
+    width: 95%;
+    height: 30px;
+    background-color: transparent;
+    border: transparent;
+    padding: 5px;
+    font-size: 16px;
+}
+.hr-senha{
+    width: 95%;
+    /* DARK MODE 
+    border-color: #ffd9b8;
+    */
+    border-color: rgb(0, 0, 0);
+}
+.esqueceu{
+    text-decoration: none;
+    font-size: 15px;
+    /* DARK MODE 
+    color: #ffd9b8;
+
+    */
+    color: black; 
+}
+.esqueceu:hover{
+    /* DARK MODE 
+    color: white;
+    */
+    color: #9180ff;
+    transition: 0.2s ease-in-out;
+}
+.entrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 70%;
+    height: 50px;
+}
+.social a{
+    text-decoration: none;
+    /* DARK MODE 
+    color: #ffd9b8;
+    */
+    color: #cfcfcf;
+}
+.social svg{
+    font-size: 30px;
+}
+.redonda{
+    margin: 0 5px;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    /* DARK MODE 
+    background-color: #414141;
+    */
+    background-color: black;
+    border-radius: 50px;
+}
+
+.a-entrar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 45px;
+    border-radius: 20px;
+    padding: 10px;
+    color: black;
+    /* DARK MODE 
+     background-color: #ffd9b8; 
+    */
+    background-color: #dab3ff;
+    text-decoration: none;
+}
+.a-entrar:hover{
+    /* DARK MODE 
+    background-color: #ffffff; 
+    */
+    background-color: #ebd7ff;
+    transition: 0.3s ease-in-out;
+}
+@media (max-width: 1200px) {
+    .a-entrar h2{ font-size: 1.2em; }
+  }
+  @media (max-width: 769px) {
+    .a-entrar h2 { font-size: 1.1; }
+    .form{ width: 80%;}
+  }
+  @media (max-width: 468px) {
+    .a-entrar h2{ font-size: 1em; }
+    .form{ width: 80%;}
+    .form{ height: auto;}
+  }
