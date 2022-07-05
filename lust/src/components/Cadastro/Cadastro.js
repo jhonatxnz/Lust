@@ -4,6 +4,8 @@ import { lightTheme, darkTheme } from "../../theme";
 import GlobalTheme from "../../globals";
 import { BsGoogle, BsFacebook } from 'react-icons/bs'
 import { MdDarkMode } from 'react-icons/md'
+import { useNavigate } from "react-router-dom";
+import useAuth from "../../context/useAuth";
 import './Cadastro.css';
 
 export default function Cadastro(props) {
@@ -23,6 +25,34 @@ export default function Cadastro(props) {
         const localTheme = window.localStorage.getItem("theme");
         localTheme && setTheme(localTheme);
     }, []);
+
+    const [email, setEmail] = useState("");
+    const [senhaConf, setSenhaConf] = useState("");
+    const [senha, setSenha] = useState("");
+    const [error, setError] = useState("");
+    const navigate = useNavigate();
+  
+    const { signup } = useAuth();
+  
+    const handleSignup = () => {
+      if (!email | !senhaConf | !senha) {
+        setError("Preencha todos os campos");
+        return;
+      } else if (senha !== senhaConf) {
+        setError("As senhas não são iguais");
+        return;
+      }
+  
+      const res = signup(email, senha);
+  
+      if (res) {
+        setError(res);
+        return;
+      }
+  
+      alert("Usuário cadatrado com sucesso!");
+      navigate("/");
+    };
     return (
         <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
             <Fragment>
@@ -48,18 +78,23 @@ export default function Cadastro(props) {
                                 </div>
                                 <div className='email'>
                                     <h3>E-mail</h3>
-                                    <input type='text' className='input-email' maxLength='30'></input>
+                                    <input type='text' className='input-email' maxLength='30' value={email}
+                                    onChange={(e) => [setEmail(e.target.value), setError("")]}></input>
                                     <hr className='hr-email'></hr>
                                 </div>
                                 <div className='senha'>
                                     <h3>Senha</h3>
-                                    <input type='password' className='input-senha' maxLength='16'></input>
+                                    <input type='password' className='input-senha' maxLength='16' value={senha}
+                                    onChange={(e) => [setSenha(e.target.value), setError("")]}></input>
                                     <hr className='hr-senha'></hr>
                                 </div>
                                 <div className='senha'>
                                     <h3>Confirme a senha</h3>
-                                    <input type='password' className='input-senha' maxLength='16'></input>
+                                    <input type='password' className='input-senha' maxLength='16'
+                                    value={senhaConf}
+                                    onChange={(e) => [setSenhaConf(e.target.value), setError("")]}></input>
                                     <hr className='hr-senha'></hr>
+                                    <label>{error}</label>
                                 </div>
                                 <div className='idade'>
                                     <h3>Idade</h3>
@@ -74,9 +109,9 @@ export default function Cadastro(props) {
                                             <BsFacebook />
                                         </a>
                                     </div>
-                                    <a href='' className='a-entrar'>
-                                        <h3>Entrar</h3>
-                                    </a>
+                                    <button href='' className='a-entrar' onClick={handleSignup}>
+                                        <h3>Cadastrar</h3>
+                                    </button>
                                     
                                 </div>
                                 <a href='/login' className="esqueceu">

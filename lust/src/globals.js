@@ -52,6 +52,9 @@ export default createGlobalStyle`
     width: 90%;
     height: 90%;
 }
+.input-nome{
+    color: ${({ theme }) => theme.colorTheme};
+}
 .esqueceu{
     text-decoration: none;
     font-size: 15px;
@@ -161,4 +164,16 @@ export default createGlobalStyle`
         color: ${({ theme }) => theme.colorTheme};
         border: 2px solid ${({ theme }) => theme.colorTheme};
     }
+    @media (max-width: 1200px) {
+        .a-entrar h2{ font-size: 1.2em; }
+      }
+      @media (max-width: 769px) {
+        .a-entrar h2 { font-size: 1.1; }
+        .form{ width: 80%;}
+      }
+      @media (max-width: 468px) {
+        .a-entrar h2{ font-size: 1em; }
+        .form{ width: 80%;}
+        .form{ height: auto;}
+      }
 `;
