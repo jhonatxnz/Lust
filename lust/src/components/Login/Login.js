@@ -70,7 +70,9 @@ export default function Login(props) {
                                         <h3>Entrar</h3>
                                     </a>
                                 </div>
-
+                                <a href='/cadastro' className="esqueceu">
+                                        <p>Já tem conta?</p>
+                                    </a>
                             </div>
                         </div>
                     </div>

@@ -1,12 +1,14 @@
 import React from "react";
-import Login from './components/Login/Login'
-import Cadastro from './components/Cadastro/Cadastro'
+import Rotas from './Routes';
+import { BrowserRouter } from 'react-router-dom';
 import './App.css'
+
 const App = () => {
     return (
-        <>
-          <Cadastro/>
-        </>
+        <BrowserRouter>
+          <Rotas />
+                    {/*digite /cadastro na url  */}
+        </BrowserRouter>
     );
 };
 

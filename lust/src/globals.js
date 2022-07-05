@@ -37,7 +37,7 @@ export default createGlobalStyle`
 }
 .form {
     width: 25%;
-    height: 60%;
+    height: 65%;
     backdrop-filter: blur(5px) saturate(95%);
     -webkit-backdrop-filter: blur(5px) saturate(95%);
     background-color: rgba(17, 25, 40, 0.2);
