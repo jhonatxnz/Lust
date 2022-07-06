@@ -1,7 +1,7 @@
 import React, { Fragment, useState, useEffect } from "react";
 import { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme } from "../../theme";
-import GlobalTheme from "../../globals";
+import LoginRegister from "../../loginRegister";
 import { BsGoogle, BsFacebook } from 'react-icons/bs'
 import { MdDarkMode } from 'react-icons/md'
 import { useNavigate } from "react-router-dom";
@@ -56,7 +56,7 @@ export default function Cadastro(props) {
     return (
         <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
             <Fragment>
-                <GlobalTheme />
+                <LoginRegister />
                 <div className='content'>
                     <div className='darkMode'>
                         <button className='luas' onClick={toggleTheme}>

@@ -1,0 +1,125 @@
+nav {
+    background-color: #d8ddff;
+    width: 100%;
+    height: 65px;
+    display: flex;
+    padding: 0px 40px 0px 40px;
+}
+
+nav .esq {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.esq .lust {
+    font-family: 'Simonetta', cursive;
+    color: #000000;
+    text-decoration: none;
+    font-size: 32px;
+}
+
+.dropdown {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.categorias {
+    text-decoration: none;
+    font-size: 17px;
+    color: black;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+nav .dir {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 20px;
+}
+
+.search {
+    width: 15%;
+    height: 45px;
+    background-color: #000000;
+    border: 1px solid transparent;
+    border-radius: 35px;
+    color: #eff1ff;
+    padding: 0 30px;
+    margin: 0 1em;
+}
+
+.search::placeholder {
+    color: #eff1ff;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.shine {
+    width: 48px;
+    height: 48px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+}
+
+.shine:hover {
+    background-color: #eff1ff;
+    transition: .4s ease-in-out;
+
+}
+
+.carrinho svg {
+    color: #000000;
+    font-size: 32px;
+}
+
+.userAcount svg {
+    color: #000000;
+    font-size: 32px;
+}
+
+.signout {
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+    ;
+}
+
+.signout svg {
+    color: #000000;
+    font-size: 32px;
+}

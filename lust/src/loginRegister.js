@@ -18,7 +18,7 @@ export default createGlobalStyle`
     width: 100%;
     height: 100vh;
 }
-
+// CADASTRO E LOGIN
 .center {
     display: flex;
     justify-content: center;
@@ -53,7 +53,7 @@ export default createGlobalStyle`
     height: 90%;
 }
 .input-nome{
-    color: ${({ theme }) => theme.colorTheme};
+    color: ${({ theme }) => theme.text};
 }
 .esqueceu{
     text-decoration: none;
@@ -113,56 +113,56 @@ export default createGlobalStyle`
 
   .darkMode svg{
     font-size: 42px;
-    color: ${({ theme }) => theme.colorTheme};
+    color: ${({ theme }) => theme.text};
 }
 
   .hr-login{
     margin: 5px 0px;
     width: 25%;
-    border-color: ${({ theme }) => theme.colorTheme};
+    border-color: ${({ theme }) => theme.text};
   }
   .hr-email{
     width: 95%;
-    border-color: ${({ theme }) => theme.colorTheme};
+    border-color: ${({ theme }) => theme.text};
    }
    .hr-cadastro{
     margin: 5px 0px;
     width: 33%;
-    border-color: ${({ theme }) => theme.colorTheme};
+    border-color: ${({ theme }) => theme.text};
    }
    .hr-nome{
     width: 95%;
-    border-color: ${({ theme }) => theme.colorTheme};
+    border-color: ${({ theme }) => theme.text};
    }
    .input-senha{
-    color: ${({ theme }) => theme.colorTheme};
+    color: ${({ theme }) => theme.text};
    }
    .input-email{
-    color: ${({ theme }) => theme.colorTheme};
+    color: ${({ theme }) => theme.text};
     }   
     .hr-senha{
         width: 95%;
-        border-color: ${({ theme }) => theme.colorTheme};
+        border-color: ${({ theme }) => theme.text};
     }
     .esqueceu{
-        color: ${({ theme }) => theme.colorTheme};
+        color: ${({ theme }) => theme.text};
     }
     .social a{
-        color: ${({ theme }) => theme.colorTheme};
+        color: ${({ theme }) => theme.text};
     }
     
     .a-entrar{
-         background-color: ${({ theme }) => theme.colorTheme}; 
+         background-color: ${({ theme }) => theme.text}; 
     }
     .a-entrar:hover{
         background-color: #ffffff; 
     }
     .idade{
-        color:${({ theme }) => theme.colorTheme};
+        color:${({ theme }) => theme.text};
     }
     .calendar{
-        color: ${({ theme }) => theme.colorTheme};
-        border: 2px solid ${({ theme }) => theme.colorTheme};
+        color: ${({ theme }) => theme.text};
+        border: 2px solid ${({ theme }) => theme.text};
     }
     @media (max-width: 1200px) {
         .a-entrar h2{ font-size: 1.2em; }
@@ -175,5 +175,7 @@ export default createGlobalStyle`
         .a-entrar h2{ font-size: 1em; }
         .form{ width: 80%;}
         .form{ height: auto;}
-      }
+    }
+    
+        
 `;
