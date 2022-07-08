@@ -1,0 +1,52 @@
+.meio {
+    width: 100%;
+}
+
+.h1Alinhado {
+    text-align: center;
+}
+
+.cards-promo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards {
+    width: 80%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards-categorias {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards2 {
+    width: 80%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 1200px) {
+    .cards {
+        width: 100%;
+    }
+}
+
+@media (max-width: 468px) {
+    .cards-promo {
+        flex-direction: column;
+        height: auto;
+    }
+    .cards{
+        flex-direction: column;
+        height: auto;
+    }
+}

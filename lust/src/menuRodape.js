@@ -16,7 +16,6 @@ export default createGlobalStyle`
   }
   .content {
     width: 100%;
-    height: 100vh;
 }
     // MENU
     nav{
@@ -69,5 +68,20 @@ export default createGlobalStyle`
             width:80%;
         }
     }
-        
+    // CARD
+    .img svg {
+        font-size: 26px;
+        color: ${({ theme }) => theme.text};
+    }
+    .absolute button:hover {
+        background-color: ${({ theme }) => theme.black};
+    }
+    .price{
+        color: ${({ theme }) => theme.text};
+    }
+    // CATEGORIA
+    .titleCat{
+        color: ${({ theme }) => theme.text};
+    }
+    
 `;

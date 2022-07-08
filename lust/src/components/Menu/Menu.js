@@ -39,7 +39,6 @@ export default function Menu(props) {
         <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
             <Fragment>
             <MenuRodape/>
-                <div className="content">
                     <nav>
                         <div className="esq">
                             <a href="/home" className="lust">
@@ -50,9 +49,9 @@ export default function Menu(props) {
                                 <li className="dropdown">
                                     <p className="categorias"><strong>Categorias</strong></p>
                                     <div className="dropdown-content">
-                                        <a href="#">Sala</a>
-                                        <a href="#">Cozinha</a>
-                                        <a href="#">Quarto</a>
+                                        <a href="#">Dispositivos móveis</a>
+                                        <a href="#">Desktops</a>
+                                        <a href="#">Moda</a>
                                     </div>
                                 </li>
                             </div>
@@ -86,7 +85,6 @@ export default function Menu(props) {
                             </div>
                         </div>
                     </nav>
-                </div>
             </Fragment>
         </ThemeProvider>
     )
