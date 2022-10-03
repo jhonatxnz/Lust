@@ -15,6 +15,7 @@ export default function Rotas() {
     return (
         <Routes>
             <Route exact path="/home" element={<Private Item={Home} />} />
+            <Route exact path='/'element={<Cadastro/>}/>
             <Route exact path='/cadastro'element={<Cadastro/>}/>
             <Route path='/login' element={<Login />} />
             <Route path="*" to='/' />
